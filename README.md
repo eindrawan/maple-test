@@ -1,11 +1,11 @@
 # Maple Test
 
-This project was intended for demonstration of simple e-commerce app
-using angular for front-end and Go-lang for the backend
+This project was intended for demonstration of simple e-commerce app<br>
+using angular for front-end and Go-lang for the backend<br>
 
-you can use "admin" for user and "@dmin" for the password
-this consists of Login/Logout, Items Gallery, Add to Cart, and Checkout
-its not focused on security and UI design, just a demo for simple FE-BE using Angular and Go
+you can use "admin" for user and "@dmin" for the password<br>
+this consists of Login/Logout, Items Gallery, Add to Cart, and Checkout<br>
+its not focused on security and UI design, just a demo for simple FE-BE using Angular and Go<br>
 
 ## Run using docker compose
 
