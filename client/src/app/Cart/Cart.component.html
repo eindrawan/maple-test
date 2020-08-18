@@ -1,0 +1,23 @@
+<p>
+  <mat-list style="min-width: 500px;">
+    <mat-list-item *ngFor="let item of products">
+      <img matListAvatar [src]="item.img_url" />
+      <h3 matLine>{{ item.product_name }}</h3>
+      <p matLine>
+        <span> $ {{ item.price }} </span>
+        <span class="demo-2">
+          -- Qty: {{ item.qty }} -- Total $ {{ item.price_total }}
+        </span>
+      </p>
+      <button mat-icon-button (click)="addItem(item.product_id)">
+        <mat-icon>add</mat-icon>
+      </button>
+      <button mat-icon-button (click)="removeItem(item.product_id)">
+        <mat-icon>remove</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-list>
+  <button mat-raised-button color="warn" (click)="checkout()">
+    CHECKOUT
+  </button>
+</p>

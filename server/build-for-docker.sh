@@ -1,0 +1,1 @@
+CGO_ENABLED=0 GOOS=linux go build -o ./bin/maple-server -a -ldflags '-extldflags "-static"'

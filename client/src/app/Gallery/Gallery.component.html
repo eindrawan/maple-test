@@ -1,0 +1,17 @@
+<p>
+  <mat-card style="width: 200px;" *ngFor="let item of products">
+    <mat-card-title>{{ item.product_name }}</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+    <img src="{{ item.img_url }}" mat-card-md-image />
+    <mat-card-actions style="display: flex;">
+      <div style="flex:1; font-weight: bold; font-size: large; padding:8px;">
+        $ {{ item.price }}
+      </div>
+      <div style="flex:1; text-align: right;">
+        <button mat-raised-button color="primary" (click)="addToCart(item)">
+          + BUY
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</p>

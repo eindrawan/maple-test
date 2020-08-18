@@ -1,0 +1,22 @@
+<p>
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input matInput [formControl]="username" placeholder="Username/Email" />
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input
+      matInput
+      [formControl]="password"
+      placeholder="Password"
+      type="password"
+    />
+    <mat-icon matSuffix>lock</mat-icon>
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" appearance="fill" (click)="Login()">
+    LOGIN
+  </button>
+</p>

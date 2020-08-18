@@ -1,0 +1,7 @@
+FROM mysql:5.7
+
+RUN /bin/bash -c "/usr/bin/mysqld_safe --skip-grant-tables &" && \
+  sleep 5 && \
+  mysql -u root -e "CREATE DATABASE maple" && \
+  mysql -u root maple < /tmp/dump.sql
+

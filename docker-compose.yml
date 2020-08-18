@@ -1,0 +1,22 @@
+version: "3"
+services:
+  frontend:
+    image: indrawan/maple-test:client
+    ports:
+      - "80:80"
+    links:
+      - backend
+  backend:
+    image: indrawan/maple-test:server
+    ports:
+      - "8001:8001"
+    links:
+      - db
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
